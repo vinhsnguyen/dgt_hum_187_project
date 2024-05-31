@@ -3447,9 +3447,10 @@ input, select, textarea {
 		position: absolute;
 	}
 
-/* Banner */
+/* Banners */
 
-	#banner {
+	/* text and img right allign */
+	#banner_right {
 		background-attachment: fixed;
 		background-color: #272833;
 		background-image: url("../../images/banner.jpg");
@@ -3462,7 +3463,7 @@ input, select, textarea {
 		z-index: 21;
 	}
 
-		#banner:before {
+		#banner_right:before {
 			content: '';
 			display: inline-block;
 			height: 100vh;
@@ -3470,7 +3471,7 @@ input, select, textarea {
 			width: 1%;
 		}
 
-		#banner:after {
+		#banner_right:after {
 			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
@@ -3484,7 +3485,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		#banner .content {
+		#banner_right .content {
 			display: inline-block;
 			margin-right: 1%;
 			max-width: 95%;
@@ -3495,22 +3496,22 @@ input, select, textarea {
 			z-index: 1;
 		}
 
-			#banner .content header {
+			#banner_right .content header {
 				display: inline-block;
 				vertical-align: middle;
 			}
 
-				#banner .content header h2 {
+				#banner_right .content header h2 {
 					font-size: 2.5em;
 					margin: 0;
 				}
 
-				#banner .content header p {
+				#banner_right .content header p {
 					margin: 0.5em 0 0 0;
 					top: 0;
 				}
 
-			#banner .content .image {
+			#banner_right .content .image {
 				border-radius: 100%;
 				display: inline-block;
 				height: 18em;
@@ -3519,13 +3520,175 @@ input, select, textarea {
 				width: 18em;
 			}
 
-				#banner .content .image img {
+				#banner_right .content .image img {
 					border-radius: 100%;
 					display: block;
 					width: 100%;
 				}
 
-	body.is-touch #banner {
+	body.is-touch #banner_right {
+		background-attachment: scroll;
+	}
+
+	/* text and img right allign */
+	#banner_left {
+		background-attachment: fixed;
+		background-color: #272833;
+		background-image: url("../../images/banner.jpg");
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		min-height: 100vh;
+		position: relative;
+		text-align: center;
+		z-index: 21;
+	}
+
+		#banner_left:before {
+			content: '';
+			display: inline-block;
+			height: 100vh;
+			vertical-align: middle;
+			width: 1%;
+		}
+
+		#banner_left:after {
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#banner_left .content {
+			display: inline-block;
+			margin-right: 1%;
+			max-width: 95%;
+			padding: 6em;
+			position: relative;
+			text-align: left;
+			vertical-align: middle;
+			z-index: 1;
+		}
+
+			#banner_left .content header {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+				#banner_left .content header h2 {
+					font-size: 2.5em;
+					margin: 0;
+				}
+
+				#banner_left .content header p {
+					margin: 0.5em 0 0 0;
+					top: 0;
+				}
+
+			#banner_left .content .image {
+				border-radius: 100%;
+				display: inline-block;
+				height: 18em;
+				margin-left: 3em;
+				vertical-align: middle;
+				width: 18em;
+			}
+
+				#banner_left .content .image img {
+					border-radius: 100%;
+					display: block;
+					width: 100%;
+				}
+
+	body.is-touch #banner_left {
+		background-attachment: scroll;
+	}
+
+	/* text and img right allign */
+	#banner_center {
+		background-attachment: fixed;
+		background-color: #272833;
+		background-image: url("../../images/banner.jpg");
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		min-height: 100vh;
+		position: relative;
+		text-align: center;
+		z-index: 21;
+	}
+
+		#banner_center:before {
+			content: '';
+			display: inline-block;
+			height: 100vh;
+			vertical-align: middle;
+			width: 1%;
+		}
+
+		#banner_center:after {
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#banner_center .content {
+			display: inline-block;
+			margin-right: 1%;
+			max-width: 95%;
+			padding: 6em;
+			position: relative;
+			/* text-align: left; */
+			vertical-align: middle;
+			z-index: 1;
+		}
+
+			#banner_center .content header {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+				#banner_center .content header h2 {
+					font-size: 2.5em;
+					margin: 0;
+				}
+
+				#banner_center .content header p {
+					margin: 0.5em 0 0 0;
+					top: 0;
+				}
+
+			#banner_center .content .image {
+				border-radius: 100%;
+				display: inline-block;
+				height: 18em;
+				margin-left: 3em;
+				vertical-align: middle;
+				width: 18em;
+			}
+
+				#banner_center .content .image img {
+					border-radius: 100%;
+					display: block;
+					width: 100%;
+				}
+
+	body.is-touch #banner_center {
 		background-attachment: scroll;
 	}
 
