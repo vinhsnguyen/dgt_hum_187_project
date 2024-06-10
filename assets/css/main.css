@@ -4273,8 +4273,14 @@ input, select, textarea {
 
 	}
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1000px) {
 	#desktop_only {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#mobile_only {
 		display: none;
 	}
 }
