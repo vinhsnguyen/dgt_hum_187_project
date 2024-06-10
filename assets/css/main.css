@@ -4272,3 +4272,9 @@ input, select, textarea {
 					}
 
 	}
+
+@media only screen and (max-width: 400px) {
+	#desktop_only {
+		display: none;
+	}
+}
